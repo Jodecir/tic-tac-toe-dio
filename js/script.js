@@ -97,9 +97,9 @@ function changeWinner(box) {
 }
 
 function changeBoxColor(box1,box2,box3) {
-  box1.style.background = '#0f0';
-  box2.style.background = '#0f0';
-  box3.style.background = '#0f0';
+  box1.style.background = '#0eee46a4';
+  box2.style.background = '#0eee46a4';
+  box3.style.background = '#0eee46a4';
 }
 
 function checkOrder(box1,box2,box3) {

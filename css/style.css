@@ -7,7 +7,16 @@
   --cinza: #eeeeee;
   --preto:#141414;
   --branco: #ffffff;
-  --amarelo:#eecc0e;
+  --amarelo:#eecc0ea4;
+  --verde:#0eee46a4;
+}
+
+.dark:root {
+  --cinza: #eeeeee;
+  --preto:#ffffff;
+  --branco: #141414;
+  --amarelo:#eecc0ea4;
+  --verde:#0eee46a4;
 }
 
 * {
@@ -18,13 +27,13 @@
 
 body {
   background: var(--branco);
-  font-family:'Times New Roman', Times, serif;
+  font-family: Titulo;
   text-align: center;
 }
 
 h1 {
-  font-family: Titulo;
-  font-size: 40px;
+  color: var(--preto);
+  font-size: 45px;
   letter-spacing: 10px;
   margin: 25px;
 }
@@ -61,19 +70,20 @@ h1 {
 }
 
 .info {
-  border: 2px solid #000000;
+  border: 2px solid #141414;
   border-radius: 30px;
-  background-color: var(--preto);
-  color: var(--branco);
+  background-color: #141414;
+  color: #ffffff;
   position: absolute;
   left: 5px;
   top: 5px;
   width: 125px;
-  height: 120px;
-  padding: 15px;
+  height: 155px;
+  padding: 10px;
 }
 
 label {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin-bottom: 10px;
 }
 
@@ -82,9 +92,61 @@ button {
   border: 2px solid var(--cinza);
   color: var(--branco);
   margin-top: 10px;
-  height: 40px;
-  width: 80px;
+  height: 35px;
+  width: 70px;
   font-size: 15px;
   cursor: pointer;
   border-radius: 10px;
+}
+
+/* Dark Mode Feature */ 
+
+.dark-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+	height: 10vh;
+}
+
+.checkbox {
+  position: absolute;
+	opacity: 0;
+}
+
+.label {
+	background-color: var(--branco);
+	border-radius: 25px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	height: 15px;
+	width: 30px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: var(--preto);
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 11px;
+	width: 11px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(15px);
+}
+
+.fa-moon {
+  color: var(--verde);
+	transform: scale(0.5);
+}
+
+.fa-sun {
+  color: var(--amarelo);
+	transform: scale(0.5);
 }
