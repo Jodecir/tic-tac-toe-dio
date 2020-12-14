@@ -2,7 +2,19 @@ let player, winner = null;
 let selectedPlayer = document.getElementById('selectedPlayer');
 let selectedWinner = document.getElementById('selectedWinner');
 
-changePlayer('O');
+shufflePlayer();
+
+function shufflePlayer() {
+  if(Math.floor(Math.random() * 2)==0) {
+      player = "X";
+      selectedPlayer.innerText="X"; 
+      selectedPlayer.style.color='#eecc0ea4'; 
+  }else{
+      player = "O";
+      selectedPlayer.innerText="O";
+      selectedPlayer.style.color='#0eee46a4';
+  }
+}
 
 function selectBox(id) {
   if (winner !== null) {
