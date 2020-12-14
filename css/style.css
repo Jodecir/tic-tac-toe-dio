@@ -47,15 +47,23 @@ h1 {
   color: var(--preto);
 }
 
-.player, .winner {
+.info {
   font-size: 30px;
   margin-top: 10px;
 }
 
+label {
+  margin-bottom: 10px;
+}
+
 button {
-  background: var(--cinza);
+  background: var(--preto);
+  border: 2px solid var(--cinza);
+  color: var(--branco);
   margin-top: 10px;
-  height: 35px;
-  width: 100px;
+  height: 40px;
+  width: 110px;
+  font-size: 15px;
   cursor: pointer;
+  border-radius: 10px;
 }

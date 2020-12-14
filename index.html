@@ -14,31 +14,35 @@
       <h1>Tic-Tac-Toe</h1>
     </div>
 		<div id="container-game">
-      <div>
-        <div id="1" class="box" onclick="selectBox(this.id)">!</div>
-        <div id="2" class="box" onclick="selectBox(this.id)">!</div>
-        <div id="3" class="box" onclick="selectBox(this.id)">!</div>
+      <div class="hash">
+        <div>
+          <div id="1" class="box" onclick="selectBox(this.id)">!</div>
+          <div id="2" class="box" onclick="selectBox(this.id)">!</div>
+          <div id="3" class="box" onclick="selectBox(this.id)">!</div>
+        </div>
+        <div>
+          <div id="4" class="box" onclick="selectBox(this.id)">!</div>
+          <div id="5" class="box" onclick="selectBox(this.id)">!</div>
+          <div id="6" class="box" onclick="selectBox(this.id)">!</div>
+        </div>
+        <div>
+          <div id="7" class="box" onclick="selectBox(this.id)">!</div>
+          <div id="8" class="box" onclick="selectBox(this.id)">!</div>
+          <div id="9" class="box" onclick="selectBox(this.id)">!</div>
+        </div>
       </div>
-      <div>
-        <div id="4" class="box" onclick="selectBox(this.id)">!</div>
-        <div id="5" class="box" onclick="selectBox(this.id)">!</div>
-        <div id="6" class="box" onclick="selectBox(this.id)">!</div>
-      </div>
-      <div>
-        <div id="7" class="box" onclick="selectBox(this.id)">!</div>
-        <div id="8" class="box" onclick="selectBox(this.id)">!</div>
-        <div id="9" class="box" onclick="selectBox(this.id)">!</div>
-      </div>
-      <div class="player">
-        <label>Player:</label>
-        <label id="selectedPlayer"></label>
-      </div>
-      <div class="winner">
-        <label>Winner:</label>
-        <label id="selectedWinner"></label>
-      </div>
-      <div>
-        <button onclick="restart()">Restart</button>
+      <div class="info">
+        <div class="player">
+          <label>Player:</label>
+          <label id="selectedPlayer"></label>
+        </div>
+        <div class="winner">
+          <label>Winner:</label>
+          <label id="selectedWinner"></label>
+        </div>
+        <div>
+          <button onclick="restart()">Restart</button>
+        </div>
       </div>
     </div>
   </body>
