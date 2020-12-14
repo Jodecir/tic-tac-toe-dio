@@ -110,3 +110,16 @@ function checkOrder(box1,box2,box3) {
   }
   return equal;
 }
+
+function restart() {
+  winner = null;
+  selectedWinner.innerHTML = '';
+
+  for (let i = 1; i <= 9; i++) {
+      let box = document.getElementById(i);
+      box.style.background = '#eee';
+      box.style.color = '#eee';
+      box.innerHTML = '!';
+  }
+  changePlayer('X');
+}
