@@ -15,7 +15,6 @@ h1 {
 .box {
   background: #eee;
   color: #eee;
-  text-align: center;
   cursor: pointer;
   display: inline-block;
   width: 110px;
@@ -23,6 +22,7 @@ h1 {
   padding: 20px;
   margin: 3px 1.5px 3px 1.5px;
   font-size: 60px;
+  text-align: center;
   justify-content: center;
 }
 
