@@ -26,6 +26,11 @@ h1 {
   justify-content: center;
 }
 
+.box:hover {
+  background: #eecc0e;
+  color: #000;
+}
+
 .player, .winner {
   font-size: 30px;
   margin-top: 10px;
