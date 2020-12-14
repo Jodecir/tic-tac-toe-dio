@@ -115,7 +115,7 @@ button {
 }
 
 .label {
-	background-color: var(--branco);
+	background-color: var(--preto);
 	border-radius: 25px;
 	cursor: pointer;
 	display: flex;
@@ -126,7 +126,7 @@ button {
 }
 
 .label .ball {
-	background-color: var(--preto);
+	background-color: var(--branco);
 	border-radius: 50%;
 	position: absolute;
 	top: 2px;
@@ -147,6 +147,6 @@ button {
 }
 
 .fa-sun {
-  color: var(--amarelo);
+  color: var(--branco);
 	transform: scale(0.5);
 }
