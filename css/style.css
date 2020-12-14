@@ -1,5 +1,5 @@
 @font-face {
-	font-family:Titulo;
+	font-family: Titulo;
 	src:url(../fonts/Hashtag.ttf);
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-  font-family:Titulo;
+  font-family: Titulo;
   font-size: 40px;
   letter-spacing: 18px;
 }
