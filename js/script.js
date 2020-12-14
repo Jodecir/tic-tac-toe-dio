@@ -2,6 +2,9 @@ let player, winner = null;
 let selectedPlayer = document.getElementById('selectedPlayer');
 let selectedWinner = document.getElementById('selectedWinner');
 
+let writePencilSound=document.getElementById("writePencilSound");
+let writePencilSound2=document.getElementById("writePencilSound2");
+
 shufflePlayer();
 
 function shufflePlayer() {
@@ -42,11 +45,13 @@ function changePlayer(value) {
     player='X';
     selectedPlayer.innerText='X';
     selectedPlayer.style.color='#eecc0ea4';
+    writePencilSound.play();
 
   }else{
     player='O';
     selectedPlayer.innerText='O';
     selectedPlayer.style.color='#0eee46a4';
+    writePencilSound2.play();
   }
 }
 
@@ -148,5 +153,4 @@ function restart() {
       box.style.color = '#eee';
       box.innerHTML = '!';
   }
-  changePlayer('O');
 }
