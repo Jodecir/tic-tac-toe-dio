@@ -2,7 +2,7 @@ let player, winner = null;
 let selectedPlayer = document.getElementById('selectedPlayer');
 let selectedWinner = document.getElementById('selectedWinner');
 
-changePlayer('X');
+changePlayer('O');
 
 function selectBox(id) {
   if (winner !== null) {
@@ -18,11 +18,6 @@ function selectBox(id) {
   box.innerHTML = player;
   box.style.color = '#000';
 
-  if (player === 'X') {
-    player = 'O';
-  }else {
-    player = 'X';
-  }
   changePlayer(player);
   checkWinner();
 }
@@ -30,6 +25,17 @@ function selectBox(id) {
 function changePlayer(value) {
   player = value;
   selectedPlayer.innerHTML = player;
+  
+  if(player=='O') {
+    player='X';
+    selectedPlayer.innerText='X';
+    selectedPlayer.style.color='#eecc0ea4';
+
+  }else{
+    player='O';
+    selectedPlayer.innerText='O';
+    selectedPlayer.style.color='#0eee46a4';
+  }
 }
 
 function checkWinner() {
@@ -94,6 +100,15 @@ function checkWinner() {
 function changeWinner(box) {
   winner = box.innerHTML;
   selectedWinner.innerHTML = winner;
+  
+  if(winner=='O') {
+    selectedWinner.innerText='X';
+    selectedWinner.style.color='#eecc0ea4';
+
+  }else{
+    selectedWinner.innerText='O';
+    selectedWinner.style.color='#0eee46a4';
+  }
 }
 
 function changeBoxColor(box1,box2,box3) {
@@ -121,5 +136,5 @@ function restart() {
       box.style.color = '#eee';
       box.innerHTML = '!';
   }
-  changePlayer('X');
+  changePlayer('O');
 }

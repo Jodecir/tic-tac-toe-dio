@@ -69,6 +69,14 @@ h1 {
   color: var(--preto);
 }
 
+.group {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px 0;
+}
+
 .info {
   border: 2px solid #141414;
   border-radius: 30px;
