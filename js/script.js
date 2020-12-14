@@ -114,12 +114,12 @@ function changeWinner(box) {
   selectedWinner.innerHTML = winner;
   
   if(winner=='O') {
-    selectedWinner.innerText='X';
-    selectedWinner.style.color='#eecc0ea4';
+    selectedWinner.innerText='O Wins';
+    selectedWinner.style.color='#0eee46a4';
 
   }else{
-    selectedWinner.innerText='O';
-    selectedWinner.style.color='#0eee46a4';
+    selectedWinner.innerText='X Wins';
+    selectedWinner.style.color='#eecc0ea4';
   }
 }
 
@@ -140,7 +140,7 @@ function checkOrder(box1,box2,box3) {
 
 function restart() {
   winner = null;
-  selectedWinner.innerHTML = '';
+  selectedWinner.innerHTML = 'Tic-Tac-Toe';
 
   for (let i = 1; i <= 9; i++) {
       let box = document.getElementById(i);
