@@ -25,7 +25,20 @@ body {
 h1 {
   font-family: Titulo;
   font-size: 40px;
-  letter-spacing: 18px;
+  letter-spacing: 10px;
+  margin: 25px;
+}
+
+.game-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tic-tac-toe {
+  display: grid;
+  grid-template-areas: 'hash-up' 'hash-center' 'hash-bottom';
 }
 
 .box {
@@ -33,9 +46,9 @@ h1 {
   color: var(--cinza);
   cursor: pointer;
   display: inline-block;
-  width: 110px;
-  height: 110px;
-  padding: 20px;
+  width: 125px;
+  height: 125px;
+  padding: 30px;
   margin: 3px 1.5px 3px 1.5px;
   font-size: 60px;
   text-align: center;
@@ -48,8 +61,16 @@ h1 {
 }
 
 .info {
-  font-size: 30px;
-  margin-top: 10px;
+  border: 2px solid #000000;
+  border-radius: 30px;
+  background-color: var(--preto);
+  color: var(--branco);
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 125px;
+  height: 120px;
+  padding: 15px;
 }
 
 label {
@@ -62,7 +83,7 @@ button {
   color: var(--branco);
   margin-top: 10px;
   height: 40px;
-  width: 110px;
+  width: 80px;
   font-size: 15px;
   cursor: pointer;
   border-radius: 10px;

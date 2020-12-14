@@ -10,28 +10,29 @@
     <script src="js/script.js" defer></script>
   </head>
   <body>
-    <div class="group">
       <h1>Tic-Tac-Toe</h1>
     </div>
-		<div id="container-game">
-      <div class="hash">
-        <div>
+		<div id="game-container">
+      <div class="tic-tac-toe">
+        <div class="hash-up">
           <div id="1" class="box" onclick="selectBox(this.id)">!</div>
           <div id="2" class="box" onclick="selectBox(this.id)">!</div>
           <div id="3" class="box" onclick="selectBox(this.id)">!</div>
         </div>
-        <div>
+        <div class="hash-center">
           <div id="4" class="box" onclick="selectBox(this.id)">!</div>
           <div id="5" class="box" onclick="selectBox(this.id)">!</div>
           <div id="6" class="box" onclick="selectBox(this.id)">!</div>
         </div>
-        <div>
+        <div class="hash-bottom">
           <div id="7" class="box" onclick="selectBox(this.id)">!</div>
           <div id="8" class="box" onclick="selectBox(this.id)">!</div>
           <div id="9" class="box" onclick="selectBox(this.id)">!</div>
         </div>
       </div>
-      <div class="info">
+    </div>
+    <div class="info">
+      <div class="group">
         <div class="player">
           <label>Player:</label>
           <label id="selectedPlayer"></label>
