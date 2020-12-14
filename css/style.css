@@ -3,6 +3,13 @@
 	src:url(../fonts/Hashtag.ttf);
 }
 
+:root {
+  --cinza: #eeeeee;
+  --preto:#141414;
+  --branco: #ffffff;
+  --amarelo:#eecc0e;
+}
+
 * {
   margin:0;
   padding:0;
@@ -10,6 +17,7 @@
 }
 
 body {
+  background: var(--branco);
   font-family:'Times New Roman', Times, serif;
   text-align: center;
 }
@@ -21,8 +29,8 @@ h1 {
 }
 
 .box {
-  background: #eee;
-  color: #eee;
+  background: var(--cinza);
+  color: var(--cinza);
   cursor: pointer;
   display: inline-block;
   width: 110px;
@@ -35,8 +43,8 @@ h1 {
 }
 
 .box:hover {
-  background: #eecc0e;
-  color: #000;
+  background: var(--amarelo);
+  color: var(--preto);
 }
 
 .player, .winner {
@@ -45,7 +53,7 @@ h1 {
 }
 
 button {
-  background: #eee;
+  background: var(--cinza);
   margin-top: 10px;
   height: 35px;
   width: 100px;
