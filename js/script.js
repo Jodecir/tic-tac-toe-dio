@@ -1,4 +1,4 @@
-let player, winner = null;
+let mark, winner = null;
 let selectedPlayer = document.getElementById('selectedPlayer');
 let selectedWinner = document.getElementById('selectedWinner');
 
@@ -9,11 +9,11 @@ shufflePlayer();
 
 function shufflePlayer() {
   if(Math.floor(Math.random() * 2)==0) {
-      player = "X";
+      mark = "X";
       selectedPlayer.innerText="X"; 
       selectedPlayer.style.color='#eecc0ea4'; 
   }else{
-      player = "O";
+      mark = "O";
       selectedPlayer.innerText="O";
       selectedPlayer.style.color='#0eee46a4';
   }
@@ -30,25 +30,25 @@ function selectBox(id) {
     return;
   }
 
-  box.innerHTML = player;
+  box.innerHTML = mark;
   box.style.color = '#000';
 
-  changePlayer(player);
+  changePlayer(mark);
   checkWinner();
 }
 
 function changePlayer(value) {
-  player = value;
-  selectedPlayer.innerHTML = player;
+  mark = value;
+  selectedPlayer.innerHTML = mark;
   
-  if(player=='O') {
-    player='X';
+  if(mark=='O') {
+    mark='X';
     selectedPlayer.innerText='X';
     selectedPlayer.style.color='#eecc0ea4';
     writePencilSound.play();
 
   }else{
-    player='O';
+    mark='O';
     selectedPlayer.innerText='O';
     selectedPlayer.style.color='#0eee46a4';
     writePencilSound2.play();
