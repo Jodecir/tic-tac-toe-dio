@@ -2,20 +2,20 @@ let mark, winner = null;
 let selectedPlayer = document.getElementById('selectedPlayer');
 let selectedWinner = document.getElementById('selectedWinner');
 
-let writePencilSound=document.getElementById("writePencilSound");
-let writePencilSound2=document.getElementById("writePencilSound2");
+let writePencilSound= document.getElementById("writePencilSound");
+let writePencilSound2= document.getElementById("writePencilSound2");
 
 shufflePlayer();
 
 function shufflePlayer() {
   if(Math.floor(Math.random() * 2)==0) {
       mark = "X";
-      selectedPlayer.innerText="X"; 
-      selectedPlayer.style.color='#eecc0ea4'; 
+      selectedPlayer.innerText = mark; 
+      selectedPlayer.style.color = '#eecc0ea4'; 
   }else{
       mark = "O";
-      selectedPlayer.innerText="O";
-      selectedPlayer.style.color='#0eee46a4';
+      selectedPlayer.innerText = mark;
+      selectedPlayer.style.color = '#0eee46a4';
   }
 }
 
@@ -41,16 +41,16 @@ function changePlayer(value) {
   mark = value;
   selectedPlayer.innerHTML = mark;
   
-  if(mark=='O') {
-    mark='X';
-    selectedPlayer.innerText='X';
-    selectedPlayer.style.color='#eecc0ea4';
+  if(mark == 'O') {
+    mark = 'X';
+    selectedPlayer.innerText = mark;
+    selectedPlayer.style.color ='#eecc0ea4';
     writePencilSound.play();
 
   }else{
-    mark='O';
-    selectedPlayer.innerText='O';
-    selectedPlayer.style.color='#0eee46a4';
+    mark = 'O';
+    selectedPlayer.innerText = mark;
+    selectedPlayer.style.color = '#0eee46a4';
     writePencilSound2.play();
   }
 }
@@ -118,12 +118,14 @@ function changeWinner(box) {
   winner = box.innerHTML;
   selectedWinner.innerHTML = winner;
   
-  if(winner=='O') {
-    selectedWinner.innerText='O Wins';
-    selectedWinner.style.color='#0eee46a4';
+  if(winner=='X') {
+    mark = "X"
+    selectedWinner.innerText = mark + ' Wins';
+    selectedWinner.style.color = '#0eee46a4';
   }else{
-    selectedWinner.innerText='X Wins';
-    selectedWinner.style.color='#eecc0ea4';
+    mark = "O"
+    selectedWinner.innerText = mark + ' Wins';
+    selectedWinner.style.color = '#eecc0ea4';
   }
 }
 
