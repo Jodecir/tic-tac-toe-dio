@@ -118,12 +118,12 @@ function changeWinner(box) {
   winner = box.innerHTML;
   selectedWinner.innerHTML = winner;
   
-  if(winner=='X') {
-    mark = "X"
+  if(winner=='O') {
+    mark = "O"
     selectedWinner.innerText = mark + ' Wins';
     selectedWinner.style.color = '#0eee46a4';
   }else{
-    mark = "O"
+    mark = "X"
     selectedWinner.innerText = mark + ' Wins';
     selectedWinner.style.color = '#eecc0ea4';
   }
