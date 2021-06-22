@@ -1,6 +1,20 @@
+@media (min-width: 850px) {
+  .checkbox-container {
+    display: none;
+  }
+}
+
 @media (max-width: 800px) {
-  .box{
+  .box {
     width: 115px;
     height: 115px;
+  }
+
+  .hud {
+    display: none;
+  }
+
+  .checkbox-container {
+    display: flex;
   }
 }
