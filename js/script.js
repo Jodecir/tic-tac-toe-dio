@@ -1,9 +1,9 @@
-let mark,  winner = null;
+let mark, winner = null;
 let selectedPlayer = document.getElementById('selectedPlayer');
 let selectedWinner = document.getElementById('selectedWinner');
 
-let writePencilSound= document.getElementById("writePencilSound");
-let writePencilSound2= document.getElementById("writePencilSound2");
+let writePencilSound = document.getElementById("writePencilSound");
+let writePencilSound2 = document.getElementById("writePencilSound2");
 
 shufflePlayer();
 
